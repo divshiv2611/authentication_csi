@@ -30,14 +30,6 @@ import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 
-import com.google.android.material.textfield.TextInputEditText;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
-import com.google.firebase.database.ValueEventListener;
-
 public class SignIn extends AppCompatActivity {
 
     AppCompatButton SignInBtn;
@@ -45,6 +37,7 @@ public class SignIn extends AppCompatActivity {
     TextInputLayout tlUsername, tlPassword;
     TextInputEditText etUsername, etPassword;
     FirebaseFirestore final_firestore = FirebaseFirestore.getInstance();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
